@@ -2,9 +2,7 @@
 
 Physics package that ranks LEO compute-satellite configs inside SpaceX's filed envelope (500–2000 km, ~30° or sun-synchronous). It estimates **lifetime**, **mean power**, **radiator area**, and **shield mass** from orbit-averaged AE8/AP8 fluxes (`aep8`), a simple dose-depth model, SEU availability cost, solar-array degradation, Norris–Landzberg thermal cycling, and Stefan–Boltzmann radiator sizing.
 
-This is a **ranking tool under stated assumptions**, not a prediction of Starmind / Nvidia Rubin flight lifetime. Every coefficient lives in [`starmind_physics/params.yaml`](starmind_physics/params.yaml) and is marked **[S]** sourced or **[A]** assumed.
-
-Cesium / globe UI is intentionally out of scope here.
+This is a **ranking tool under stated assumptions**, not a prediction of Starmind / Nvidia Rubin flight lifetime. Every coefficient lives in [`starmind_physics/params.yaml`](starmind_physics/params.yaml) and is marked **[S]** sourced or **[A]** assumed or estimated.
 
 ## Setup
 
