@@ -1,6 +1,6 @@
-# Starmind physics core
+# 3rok physics core
 
-Hackathon physics package that ranks LEO compute-satellite configs inside SpaceX's filed envelope (500–2000 km, ~30° or sun-synchronous). It estimates **lifetime**, **mean power**, **radiator area**, and **shield mass** from orbit-averaged AE8/AP8 fluxes (`aep8`), a simple dose-depth model, SEU availability cost, solar-array degradation, Norris–Landzberg thermal cycling, and Stefan–Boltzmann radiator sizing.
+Physics package that ranks LEO compute-satellite configs inside SpaceX's filed envelope (500–2000 km, ~30° or sun-synchronous). It estimates **lifetime**, **mean power**, **radiator area**, and **shield mass** from orbit-averaged AE8/AP8 fluxes (`aep8`), a simple dose-depth model, SEU availability cost, solar-array degradation, Norris–Landzberg thermal cycling, and Stefan–Boltzmann radiator sizing.
 
 This is a **ranking tool under stated assumptions**, not a prediction of Starmind / Nvidia Rubin flight lifetime. Every coefficient lives in [`starmind_physics/params.yaml`](starmind_physics/params.yaml) and is marked **[S]** sourced or **[A]** assumed.
 
@@ -72,7 +72,7 @@ Caveats:
 
 ## AI chip database
 
-Candidate accelerators for Starmind-class payloads live in [`starmind_physics/data/ai_chips.yaml`](starmind_physics/data/ai_chips.yaml). Every dose/SEU number is labelled **sourced** or **assumed** — Rubin/Starmind radiation tolerance is **not** public; commercial rows without tests inherit the Trillium 2 krad(Si) HBM-onset analogue for ranking only.
+Candidate accelerators for Starmind-class payloads live in [`starmind_physics/data/ai_chips.yaml`](starmind_physics/data/ai_chips.yaml). Every dose/SEU number is labelled **sourced** or **estimated** — Rubin radiation tolerance is **not** public; commercial rows without tests inherit the Trillium 2 krad(Si) HBM-onset analogue for ranking only.
 
 ```bash
 starmind-chips                          # table
